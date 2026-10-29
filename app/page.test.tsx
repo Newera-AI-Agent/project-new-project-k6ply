@@ -9,6 +9,7 @@ vi.mock('./components/projects-showcase', () => ({ default: () => <div data-test
 vi.mock('./components/about', () => ({ default: () => <div data-testid="about">About</div> }));
 vi.mock('./components/contact-form', () => ({ default: () => <div data-testid="contact">Contact</div> }));
 vi.mock('./components/footer', () => ({ default: () => <footer data-testid="footer">Footer</footer> }));
+vi.mock('./components/3d/canvas-hero', () => ({ default: () => <div data-testid="canvas-hero">Canvas Hero</div> }));
 
 describe('Home Page', () => {
   it('renders without crashing', () => {
