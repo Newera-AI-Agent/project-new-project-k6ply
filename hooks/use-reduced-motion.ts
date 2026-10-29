@@ -22,7 +22,6 @@ export function useReducedMotion(): boolean {
       mediaQuery.addEventListener('change', handler);
     } else {
       // Legacy Safari
-      // @ts-expect-error - deprecated API
       mediaQuery.addListener(handler);
     }
 
@@ -30,7 +29,6 @@ export function useReducedMotion(): boolean {
       if (mediaQuery.removeEventListener) {
         mediaQuery.removeEventListener('change', handler);
       } else {
-        // @ts-expect-error - deprecated API
         mediaQuery.removeListener(handler);
       }
     };
