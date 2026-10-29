@@ -10,6 +10,7 @@ const fonts = [
 ];
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://inspiration.pages.dev'),
   title: {
     default: 'Naman Soni — Explorer & Builder',
     template: '%s | Naman Soni',
@@ -76,41 +77,39 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const reducedMotion = typeof window !== 'undefined'
-    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    : false;
-
   return (
-    <html lang="en" suppressHydrationWarning data-reduced-motion={reducedMotion ? 'true' : 'false'}>
-      <head>
-        {/* Font preloads */}
-        {fonts.map((font) => (
-          <link
-            key={font.name}
-            rel="preload"
-            as="style"
-            href={font.url}
-            crossOrigin="anonymous"
-          />
-        ))}
-        {fonts.map((font) => (
-          <link
-            key={`style-${font.name}`}
-            rel="stylesheet"
-            href={font.url}
-            crossOrigin="anonymous"
-          />
-        ))}
-        {/* DNS prefetch for external resources */}
-        <link rel="dns-prefetch" href="https://github.com" />
-        <link rel="dns-prefetch" href="https://links.namansoni.in" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
-      <body className="bg-surface text-primary antialiased" data-reduced-motion={reducedMotion ? 'true' : 'false'}>
-        <a href="#main" className="skip-link">Skip to main content</a>
-        {children}
-      </body>
-    </html>
+    <ReducedMotionProvider>
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          {/* Font preloads */}
+          {fonts.map((font) => (
+            <link
+              key={font.name}
+              rel="preload"
+              as="style"
+              href={font.url}
+              crossOrigin="anonymous"
+            />
+          ))}
+          {fonts.map((font) => (
+            <link
+              key={`style-${font.name}`}
+              rel="stylesheet"
+              href={font.url}
+              crossOrigin="anonymous"
+            />
+          ))}
+          {/* DNS prefetch for external resources */}
+          <link rel="dns-prefetch" href="https://github.com" />
+          <link rel="dns-prefetch" href="https://links.namansoni.in" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        </head>
+        <body className="bg-surface text-primary antialiased">
+          <a href="#main" className="skip-link">Skip to main content</a>
+          {children}
+        </body>
+      </html>
+    </ReducedMotionProvider>
   );
 }
