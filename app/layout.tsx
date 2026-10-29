@@ -98,7 +98,7 @@ export default function RootLayout({
             rel="stylesheet"
             href={font.url}
             media="print"
-            onLoad="this.media='all'"
+            onLoad={(e) => { e.currentTarget.media = 'all'; }}
             crossOrigin="anonymous"
           />
         ))}
