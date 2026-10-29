@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { ReducedMotionProvider } from '@/components/reduced-motion-provider';
 
 // Font loading with preload and display swap
 const fonts = [
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     description: 'Portfolio of Naman Soni — explorer who builds whatever sparks curiosity. AI/3D tools, generative art, and independent projects.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Naman Soni — Explorer & Builder',
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Naman Soni — Explorer & Builder',
     description: 'Portfolio of Naman Soni — explorer who builds whatever sparks curiosity.',
-    images: ['/og-image.png'],
+    images: ['/og-image.svg'],
     creator: '@namansoni78',
   },
   verification: {
