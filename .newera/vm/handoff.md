@@ -1,3 +1,7 @@
+# RELAY HANDOFF — job vm-mvtjnvn2-qn98wuwd (VM 2 of 3)
+Written at the 15-minute checkpoint with 212 min left, after 21 steps.
+
+## Original task
 # RELAY HANDOFF — job vm-mvtbtk8o-gmkisyh5 (VM 1 of 3)
 Written at the 15-minute checkpoint with 15 min left, after 367 steps.
 
@@ -113,6 +117,82 @@ acecbf5 cloud status: step 234
 1d4c012 cloud status: step 234
 8d146e5 cloud status: step 234
 7f02a74 cloud status: step 233
+
+## Current plan (todo state)
+## CURRENT PLAN (10 steps)
+1. [x] Create Blog page with articles and category filtering (req home-page)
+2. [x] Create Case Studies page with detailed project views and filtering (req projects)
+3. [x] Create Skills page with proficiency visualization (req home-page)
+4. [x] Create 404 error page with design-consistent styling (req layout)
+5. [x] Enhance Footer with newsletter subscription and more social links (req layout)
+6. [x] Add interactive 3D playground/demo section (req 3d-canvas)
+7. [~] Add more micro-interactions and animations (req home-page)  <- NOW
+8. [ ] Run build and verify all routes generate correctly (req build-verify)
+9. [ ] Run tests (req tests)
+10. [ ] Request deploy to inspiration.pages.dev (req deploy)
+6/10 steps done
+
+## Contract status
+(no task contract on this job)
+
+## Loaded skills (cyber ledger — re-load if your context lost them)
+(no skills loaded)
+
+## What the next VM must do
+1. Check the repo state above — everything committed so far is real and on disk.
+2. Do NOT redo finished work. Verify what exists (build, tests) before touching anything.
+3. Continue the ORIGINAL task to completion, then finish with an honest summary.
+4. If a deploy was requested and the build is green, make sure request_deploy was called (see .newera/vm/deploy-request.json).
+
+## Progress so far
+(no rolling summary was generated — reconstruct state from the git log below and the repo itself)
+
+## Worklog (latest lines — every VM in this chain appended)
+# VM Agent Worklog
+Durable session memory for this VM job chain. Each line is one step or wind-down from one VM. Read it on boot; never delete it.
+- [2026-10-29T09:14:18.162Z | VM 1/3] boot: VM 1/3 online (job vm-mvtbtk8o-gmkisyh5, 240 min budget)
+- [2026-10-29T09:14:18.162Z | VM 1/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ f6a79c5; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-10-29T09:25:07.837Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-29T10:36:40.089Z | VM 1/3] VERIFIED green: npm run build 2>&1 | cat
+- [2026-10-29T10:38:09.901Z | VM 1/3] VERIFIED green: npm run build 2>&1 | cat
+- [2026-10-29T10:38:44.842Z | VM 1/3] VERIFIED green: bash -c 'npm run build 2>&1 | cat'
+- [2026-10-29T10:50:50.019Z | VM 1/3] VERIFIED green: /bin/bash -c 'npx next build'
+- [2026-10-29T10:59:30.239Z | VM 1/3] VERIFIED green: ls -la vitest* 2>&1; find . -name 'vitest*' -o -name 'vite.config*' 2>/dev/null
+- [2026-10-29T10:59:36.004Z | VM 1/3] VERIFIED green: cat vitest.config.ts && echo '---' && cat vitest.setup.ts
+- [2026-10-29T11:02:20.995Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-29T11:03:20.114Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-29T11:11:19.527Z | VM 1/3] VERIFIED green: npm run build 2>&1
+- [2026-10-29T11:11:43.792Z | VM 1/3] VERIFIED green: npm run build 2>&1
+- [2026-10-29T11:22:45.528Z | VM 1/3] VERIFIED green: npx vitest run --no-cache 2>&1
+- [2026-10-29T11:37:35.717Z | VM 1/3] PLAN updated: 10 steps
+- [2026-10-29T11:39:43.503Z | VM 1/3] PLAN updated: 10 steps
+- [2026-10-29T11:58:45.388Z | VM 1/3] PLAN updated: 10 steps
+- [2026-10-29T12:03:00.026Z | VM 1/3] PLAN updated: 10 steps
+- [2026-10-29T12:16:12.041Z | VM 1/3] PLAN updated: 10 steps
+- [2026-10-29T12:41:26.905Z | VM 1/3] PLAN updated: 10 steps
+- [2026-10-29T12:47:29.151Z | VM 1/3] VERIFIED green: npm run build 2>&1 | head -100
+- [2026-10-29T12:52:44.246Z | VM 1/3] VERIFIED green: npm run build 2>&1 | tail -100
+- [2026-10-29T12:53:25.869Z | VM 1/3] RELAY checkpoint at step 367 — handoff committed, VM 2 continues.
+- [2026-10-29T12:53:48.173Z | VM 2/3] boot: VM 2/3 online (job vm-mvtjnvn2-qn98wuwd, 240 min budget, relay continuation)
+- [2026-10-29T12:53:48.174Z | VM 2/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 4978688; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-10-29T12:53:58.230Z | VM 2/3] boot auto-setup: npm install --no-audit --no-fund ok
+
+## Repository state
+Changed/added files:
+(clean tree)
+
+Recent commits:
+35b1487 cloud status: step 15
+eee8277 cloud status: step 15
+83e1ae9 cloud status: step 15
+39c4c3f cloud status: step 14
+197df49 cloud status: step 14
+6909e48 cloud status: step 14
+47f69a7 cloud status: step 13
+3336ec4 cloud status: step 10
+6b44c86 cloud status: step 9
+72db825 cloud status: step 8
+4978688 agent: relay checkpoint (handoff + progress committed)
 
 ## Current plan (todo state)
 ## CURRENT PLAN (10 steps)
