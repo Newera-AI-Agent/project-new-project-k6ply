@@ -67,6 +67,7 @@ export default function PlaygroundPage() {
   ];
 
   const currentDemo = demos.find(d => d.id === activeDemo)!;
+  const CurrentDemoComponent = currentDemo.component;
 
   return (
     <section id="playground" className="section min-h-screen" aria-labelledby="playground-heading">
@@ -149,7 +150,7 @@ export default function PlaygroundPage() {
         {/* Demo Panel */}
         <div id="demo-panel" role="tabpanel" aria-labelledby={`tab-${activeDemo}`} className="mb-12">
           <div className="aspect-video md:aspect-[4/3] lg:aspect-[16/9] rounded-2xl overflow-hidden bg-surface border border-surface-border">
-            <currentDemo.component quality={quality} />
+            <CurrentDemoComponent quality={quality} />
           </div>
         </div>
 
