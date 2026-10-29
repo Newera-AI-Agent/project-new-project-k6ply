@@ -1,0 +1,24 @@
+{
+  "code": "fbw3b35c3umj",
+  "jobId": "vm-mvtbtk8o-gmkisyh5",
+  "relayIndex": 0,
+  "maxMinutes": 240,
+  "state": "running",
+  "step": 9,
+  "minutesLeft": 232,
+  "todoOpen": 0,
+  "updatedAt": "2026-10-29T09:16:18.746Z",
+  "byok": {
+    "active": false,
+    "source": "admin",
+    "roles": {
+      "steps": "admin",
+      "subagent": "admin",
+      "summarize": "admin",
+      "repair": "admin",
+      "consult": "admin",
+      "vision": "admin",
+      "image": "admin"
+    }
+  }
+}
