@@ -23,7 +23,7 @@ export function ProjectCard({ project, variant }: ProjectCardProps) {
 
   return (
     <article
-      className={`card relative overflow-hidden ${isFeatured ? 'p-8' : 'p-6'}`}
+      className={`card relative overflow-hidden ${isFeatured ? 'p-8' : 'p-6'} transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-10px_rgb(0_0_0_/0.3)] hover:border-primary-accent/30 hover:-translate-y-1`}
       aria-labelledby={`project-title-${project.id}`}
     >
       {/* Category badge */}
