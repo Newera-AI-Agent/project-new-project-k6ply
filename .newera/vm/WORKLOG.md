@@ -8,3 +8,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-29T10:38:09.901Z | VM 1/3] VERIFIED green: npm run build 2>&1 | cat
 - [2026-10-29T10:38:44.842Z | VM 1/3] VERIFIED green: bash -c 'npm run build 2>&1 | cat'
 - [2026-10-29T10:50:50.019Z | VM 1/3] VERIFIED green: /bin/bash -c 'npx next build'
+- [2026-10-29T10:59:30.239Z | VM 1/3] VERIFIED green: ls -la vitest* 2>&1; find . -name 'vitest*' -o -name 'vite.config*' 2>/dev/null
+- [2026-10-29T10:59:36.004Z | VM 1/3] VERIFIED green: cat vitest.config.ts && echo '---' && cat vitest.setup.ts
