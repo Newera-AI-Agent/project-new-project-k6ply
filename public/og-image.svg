@@ -1,0 +1,13 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <circle cx="600" cy="315" r="400" fill="url(#grad)" opacity="0.1"/>
+  <defs>
+    <radialGradient id="grad">
+      <stop offset="0%" stop-color="#C8FF00"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+  </defs>
+  <text x="600" y="280" font-family="Space Grotesk, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF" text-anchor="middle">Naman Soni</text>
+  <text x="600" y="350" font-family="Inter, sans-serif" font-size="28" font-weight="400" fill="#C8FF00" text-anchor="middle">Explorer &amp; Builder</text>
+  <text x="600" y="420" font-family="JetBrains Mono, monospace" font-size="16" fill="#666666" text-anchor="middle">AI/3D tools · Generative art · Independent projects</text>
+</svg>
