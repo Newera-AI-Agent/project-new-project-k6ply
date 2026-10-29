@@ -1,0 +1,21 @@
+{
+  "name": "project-new-project-k6ply",
+  "version": "1.0.0",
+  "description": "NewEra cloud session — unattended agent run (task new-project-k6ply)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Newera-AI-Agent/project-new-project-k6ply.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Newera-AI-Agent/project-new-project-k6ply/issues"
+  },
+  "homepage": "https://github.com/Newera-AI-Agent/project-new-project-k6ply#readme"
+}
