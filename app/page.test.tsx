@@ -1,13 +1,14 @@
 import { render, screen } from '@testing-library/react';
+import { describe, it, expect, vi } from 'vitest';
 import Page from './page';
 import '@testing-library/jest-dom';
 
 // Mock the client components
-jest.mock('./components/hero', () => () => <div data-testid="hero">Hero</div>);
-jest.mock('./components/projects-showcase', () => () => <div data-testid="projects">Projects</div>);
-jest.mock('./components/about', () => () => <div data-testid="about">About</div>);
-jest.mock('./components/contact-form', () => () => <div data-testid="contact">Contact</div>);
-jest.mock('./components/footer', () => () => <footer data-testid="footer">Footer</footer>);
+vi.mock('./components/hero', () => ({ default: () => <div data-testid="hero">Hero</div> }));
+vi.mock('./components/projects-showcase', () => ({ default: () => <div data-testid="projects">Projects</div> }));
+vi.mock('./components/about', () => ({ default: () => <div data-testid="about">About</div> }));
+vi.mock('./components/contact-form', () => ({ default: () => <div data-testid="contact">Contact</div> }));
+vi.mock('./components/footer', () => ({ default: () => <footer data-testid="footer">Footer</footer> }));
 
 describe('Home Page', () => {
   it('renders without crashing', () => {
