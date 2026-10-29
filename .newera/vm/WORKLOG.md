@@ -6,3 +6,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-29T09:25:07.837Z | VM 1/3] PLAN updated: 12 steps
 - [2026-10-29T10:36:40.089Z | VM 1/3] VERIFIED green: npm run build 2>&1 | cat
 - [2026-10-29T10:38:09.901Z | VM 1/3] VERIFIED green: npm run build 2>&1 | cat
+- [2026-10-29T10:38:44.842Z | VM 1/3] VERIFIED green: bash -c 'npm run build 2>&1 | cat'
