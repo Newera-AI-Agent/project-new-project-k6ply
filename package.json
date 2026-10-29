@@ -1,21 +1,36 @@
 {
-  "name": "project-new-project-k6ply",
+  "name": "namansoni-portfolio",
   "version": "1.0.0",
-  "description": "NewEra cloud session — unattended agent run (task new-project-k6ply)",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Newera-AI-Agent/project-new-project-k6ply.git"
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.169.0",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.114.0",
+    "zod": "^3.23.8"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Newera-AI-Agent/project-new-project-k6ply/issues"
-  },
-  "homepage": "https://github.com/Newera-AI-Agent/project-new-project-k6ply#readme"
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.169.0",
+    "typescript": "^5.6.3",
+    "tailwindcss": "^3.4.14",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20",
+    "vitest": "^2.1.2",
+    "@vitejs/plugin-react": "^4.3.2",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "jsdom": "^25.0.1"
+  }
 }
