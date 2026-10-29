@@ -297,7 +297,7 @@ select:focus:not(:user-invalid) {
   box-shadow: 0 0 0 3px rgb(200 255 0 / 0.2);
 }
 
-/ Error message styling */
+/* Error message styling */
 .field-error {
   color: var(--color-error);
   font-size: 0.875rem;
@@ -453,7 +453,7 @@ select:focus:not(:user-invalid) {
   cursor: not-allowed;
 }
 
-/ Textarea */
+/* Textarea */
 .textarea {
   @apply input;
   min-height: 120px;
@@ -461,7 +461,7 @@ select:focus:not(:user-invalid) {
   font-family: var(--font-inter);
 }
 
-/ Label */
+/* Label */
 .label {
   display: block;
   font-size: 0.875rem;
@@ -470,14 +470,14 @@ select:focus:not(:user-invalid) {
   margin-bottom: var(--space-2);
 }
 
-/ Field wrapper */
+/* Field wrapper */
 .field {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
 }
 
-/ Card */
+/* Card */
 .card {
   background: var(--color-surface-elevated);
   border: 1px solid var(--color-surface-border);
@@ -492,7 +492,7 @@ select:focus:not(:user-invalid) {
   transform: translateY(-2px);
 }
 
-/ Link */
+/* Link */
 .link {
   color: var(--color-text-secondary);
   text-decoration: none;
@@ -505,7 +505,7 @@ select:focus:not(:user-invalid) {
   border-color: var(--color-primary);
 }
 
-/ Section */
+/* Section */
 .section {
   padding: var(--space-20) var(--space-6);
   max-width: 1200px;
@@ -524,7 +524,7 @@ select:focus:not(:user-invalid) {
   }
 }
 
-/ Container */
+/* Container */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -544,7 +544,7 @@ select:focus:not(:user-invalid) {
   }
 }
 
-/ Noise texture overlay - subtle, single surface only */
+/* Noise texture overlay - subtle, single surface only */
 .noise-overlay::before {
   content: '';
   position: absolute;
@@ -555,7 +555,7 @@ select:focus:not(:user-invalid) {
   border-radius: inherit;
 }
 
-/ Scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -574,7 +574,7 @@ select:focus:not(:user-invalid) {
   background: var(--color-text-subtle);
 }
 
-/ Utility */
+/* Utility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -587,7 +587,7 @@ select:focus:not(:user-invalid) {
   border: 0;
 }
 
-/ Grid helpers */
+/* Grid helpers */
 .grid-auto-fit {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -600,7 +600,7 @@ select:focus:not(:user-invalid) {
   gap: var(--space-6);
 }
 
-/ Flex helpers */
+/* Flex helpers */
 .flex-center {
   display: flex;
   align-items: center;
